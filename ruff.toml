@@ -1,0 +1,19 @@
+# My preferred global settings for the Ruff Python linter and formatter
+# VSCode setting.json:
+#   "ruff.nativeServer": true,
+#   "ruff.configuration": "/path/to/this/ruff.toml"
+
+line-length = 350
+
+[lint]
+# default selected rules are: ["E4", "E7", "E9", "F"]
+# check https://docs.astral.sh/ruff/rules to get more details on rules
+# additionally select these rules:
+extend-select = [
+    "I",  # isort
+    "PTH",  # Pathlib
+    "PD"  # Pandas
+]
+
+[format]
+quote-style = "single"
